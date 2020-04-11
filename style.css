@@ -84,6 +84,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
   /* Show header with flexbox, set font based on what's available */
   /* display: flex;
   flex-wrap: wrap;
@@ -100,6 +101,7 @@ header {
   width: 100vw;
   height: 20vh;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 
 header > h1 {
@@ -117,8 +119,8 @@ header > h1 {
 }
 
 .intro > img {
-  margin-top: 14vh;
-  margin-bottom: 14vh;
+  padding-top: 14vh;
+  padding-bottom: 14vh;
   max-width: 80vw;
 }
 
@@ -126,7 +128,7 @@ header > h1 {
   font-weight: bold;
   font-size: 8vh;
   color: #FFFFFF;
-  align-self: center;
+  padding-top: 24vh;
 }
 
 
