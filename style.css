@@ -1,4 +1,5 @@
-:root {
+/* Project Flame Style Rules */
+/* :root {
   --header-color: #4459AA;
   --link-color: #1339CC;
   --alert-color: #F00E33;
@@ -16,7 +17,7 @@
 }
 
 @media (max-width: 1048px) {
-  :root {  
+  :root {
     --base-margin: 2rem;
     --header-vertical-margin: 1rem;
     --header-title-font-size: 2.0rem;
@@ -25,11 +26,11 @@
 }
 
 @media (max-width: 488px) {
-  :root {  
+  :root {
     --base-margin: 1rem;
     --header-title-font-size: 1.6rem;
     --header-nav-font-size: 1rem;
-    /* The following values are multiplied by 0.8 from default */
+    /* The following values are multiplied by 0.8 from default
     --tag-h1-top-margin: 2.4rem;
     --tag-li-verical-margins: 0.4rem;
     --schedule-vertical-margins: 1.6rem;
@@ -38,7 +39,45 @@
     --gradeScale-gap: 0.75rem;
     --gradeScale-font-size: 1.1rem;
   }
+} */
+
+/* Import Source Sans Pro Font
+/* Light
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxdu3cOWxy40.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+/* Regular
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lujVj9_mf.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* SemiBold
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu3cOWxy40.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* Bold
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxdu3cOWxy40.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}*/
 
 /* General Styling */
 body {
@@ -46,13 +85,53 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* Show header with flexbox, set font based on what's available */
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+  justify-content: center; */
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #5655B6;
 }
 
-a {
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 20vh;
+  background-color: #FFFFFF;
+}
+
+header > h1 {
+  font-weight: bold;
+  font-size: 12vh;
+  margin-right: 4vw;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro > img {
+  margin-top: 14vh;
+  margin-bottom: 14vh;
+  max-width: 80vw;
+}
+
+.intro > h1 {
+  font-weight: bold;
+  font-size: 8vh;
+  color: #FFFFFF;
+  align-self: center;
+}
+
+
+/* Project Flame Style Rules */
+/* a {
   text-decoration: none;
   outline : none;
   font-weight: bold;
@@ -81,11 +160,11 @@ li {
   padding: 1rem;
 }
 
-/* Header Styling */
+/* Header Styling
 header {
   display: flex;
   align-items: center;
-  position: -webkit-sticky; /* For Safari */
+  position: -webkit-sticky; /* For Safari
   position: sticky;
   top: 0;
   width: 100vw;
@@ -115,150 +194,10 @@ nav {
   font-size: var(--header-nav-font-size);
 }
 
-/* Content Styling */
+/* Content Styling
 .content {
   margin-left: var(--base-margin);
   margin-right: var(--base-margin);
   margin-bottom: 3rem;
   max-width: 936px;
-}
-
-/* Schedule Styling */
-.schedule {
-  margin-top: var(--schedule-vertical-margins);
-  margin-bottom: var(--schedule-vertical-margins);
-}
-
-.schedule h2 {
-  margin-top: var(--schedule-h2-top-margin);
-  margin-bottom: 0;
-}
-
-.schedule p {
-  line-height: 1.5rem;
-  margin-top: 0;
-}
-
-/* About Styling */
-.about h2 {
-  margin-top: var(--about-h2-top-margin);
-}
-
-.gradeScaleHeading {
-  margin-top: 1.2rem;
-  margin-bottom: 0.6rem;
-  margin-left: 2rem;
-}
-
-.gradeScale {
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: min-content 5.5rem min-content 1fr;
-  grid-row-gap: var(--gradeScale-gap);
-  grid-column-gap: var(--gradeScale-gap);
-  font-size: var(--gradeScale-font-size);
-}
-
-.gradeScale p {
-  margin: 0;
-}
-
-.gradeLetterLeft {
-  grid-column: 1;
-}
-
-.gradeRangeLeft {
-  grid-column: 2;
-}
-
-.gradeLetterRight {
-  grid-column: 3;
-}
-
-.gradeRangeRight {
-  grid-column: 4;
-}
-
-/* Instructor Bio Styling */
-.bios {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: grid;
-  grid-auto-rows: min-content;
-  grid-template-rows: 1fr;
-  grid-template-columns: 20% 1fr;
-  grid-row-gap: 2rem;
-  grid-column-gap: 2rem;
-  align-items: center;
-}
-
-.bios > img {
-  width: 100%;
-}
-
-.innerBio > h2:first-of-type {
-  margin-top: 0;
-}
-
-.innerBio > p:last-of-type {
-  margin-bottom: 0;
-}
-
-/* Assignment List Styling */
-.assignments > li {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Overrides for tablet-style devices */
-@media (max-width: 880px) {
-  /* Header Styling */
-  header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  nav {
-    margin-left: calc(var(--base-margin) * 2);
-    margin-right: auto;
-    margin-bottom: var(--header-vertical-margin);
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: 1fr;
-    grid-column-gap: 0;
-    grid-row-gap: 0.25rem;
-  }
-}
-
-/* Overrides for smartphone-style devices */
-@media (max-width: 488px) {
-  /* Instructor Bio Styling */
-  .bios {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media print {
-  body {
-    display: block;
-  }
-
-  header {
-    display: block;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-
-  .title {
-    margin-left: var(--base-margin);
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: var(--header-title-font-size);
-    color: #000000;
-  }
-  
-  nav {
-    display: none;
-  }
-}
+}*/
