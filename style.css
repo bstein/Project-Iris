@@ -41,44 +41,6 @@
   }
 } */
 
-/* Import Source Sans Pro Font
-/* Light
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxdu3cOWxy40.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* Regular
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lujVj9_mf.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* SemiBold
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu3cOWxy40.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* Bold
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxdu3cOWxy40.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}*/
-
 /* General Styling */
 body {
   margin: 0;
@@ -90,14 +52,13 @@ body {
   flex-wrap: wrap;
   justify-content: center; */
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #5655B6;
 }
 
 header {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   width: 100vw;
   height: 20vh;
   background-color: #FFFFFF;
@@ -105,7 +66,6 @@ header {
 }
 
 header > h1 {
-  font-weight: bold;
   font-size: 12vh;
   margin-right: 4vw;
   margin-left: auto;
@@ -113,22 +73,45 @@ header > h1 {
   margin-bottom: 0;
 }
 
-.intro {
+section {
+  height: 80vh;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
 }
 
-.intro > img {
-  padding-top: 14vh;
-  padding-bottom: 14vh;
-  max-width: 80vw;
+#intro {
+  background-color: #5655B6;
 }
 
-.intro > h1 {
-  font-weight: bold;
-  font-size: 8vh;
+#intro > img {
+  height: 100%;
+  margin-top: 26vh;
+}
+
+#intro > div {
+  margin-top: 36vh;
+}
+
+.cardText {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 6vh;
   color: #FFFFFF;
-  padding-top: 24vh;
+}
+
+.cardTextSecondary {
+  margin-left: 4vh;
+  font-size: 4vh;
+  font-weight: normal;
+}
+
+#intro2 {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 
