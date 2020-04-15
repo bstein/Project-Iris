@@ -46,11 +46,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
-  /* Show header with flexbox, set font based on what's available */
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -58,11 +53,11 @@ header {
   display: flex;
   align-items: center;
   /* position: sticky;
-  top: 0; */
+  top: 0;
+  z-index: 1; */
   width: 100vw;
   height: 20vh;
-  background-color: #FFFFFF;
-  z-index: 1;
+  background-color: #ffffff;
 }
 
 header > h1 {
@@ -75,9 +70,15 @@ header > h1 {
 
 section {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   overflow: hidden;
+}
+
+section > img {
+  height: 100%;
 }
 
 #intro {
@@ -86,34 +87,42 @@ section {
 }
 
 #intro > img {
-  height: 100%;
-  align-self: center;
   margin-top: 20vh;
 }
 
 #intro > div {
-  align-self: center;
   margin-top: 20vh;
 }
 
 .cardText {
   margin-top: 2vh;
   margin-bottom: 2vh;
-  font-size: 6vh;
-  color: #FFFFFF;
+  font-size: 8vh;
+  color: #ffffff;
 }
 
 .cardTextSecondary {
   margin-left: 4vh;
-  font-size: 4vh;
+  font-size: 6vh;
+  font-weight: normal;
+}
+
+.cardTextParagraph {
+  font-size: 3vh;
   font-weight: normal;
 }
 
 #flow {
-  background-color: #8755b6;
-  height: 100vh;
+  background-color: #55b4b6;
 }
 
+#flow > img {
+  height: 80%;
+}
+
+#flow > div {
+  /* margin-top: 25vh; */
+}
 
 /* Project Flame Style Rules */
 /* a {
