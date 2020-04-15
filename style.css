@@ -74,23 +74,26 @@ header > h1 {
 }
 
 section {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
 }
 
 #intro {
-  background-color: #5655B6;
+  height: 80vh;
+  background-color: #5655b6;
 }
 
 #intro > img {
   height: 100%;
-  margin-top: 26vh;
+  align-self: center;
+  margin-top: 20vh;
 }
 
 #intro > div {
-  margin-top: 36vh;
+  align-self: center;
+  margin-top: 20vh;
 }
 
 .cardText {
@@ -106,12 +109,9 @@ section {
   font-weight: normal;
 }
 
-#intro2 {
-  background-color: #000000;
+#flow {
+  background-color: #8755b6;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 
