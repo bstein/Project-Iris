@@ -42,6 +42,11 @@
 } */
 
 /* General Styling */
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -49,27 +54,38 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none; /* For Chrome and Safari */
+}
+
 header {
   display: flex;
   align-items: center;
-  /* position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 1; */
+  z-index: 1;
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   background-color: #ffffff;
 }
 
-header > h1 {
-  font-size: 12vh;
+header h1 {
+  font-size: 9vh;
   margin-right: 4vw;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
 
+header h1 a {
+  font-size: 3vh;
+  text-decoration: none;
+  outline: none;
+  color: #1339cc;
+}
+
 section {
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
@@ -77,20 +93,19 @@ section {
   overflow: hidden;
 }
 
-section > img {
+section img {
   height: 100%;
 }
 
 #intro {
-  height: 80vh;
   background-color: #5655b6;
 }
 
-#intro > img {
-  margin-top: 20vh;
+#intro img {
+  margin-top: 40vh;
 }
 
-#intro > div {
+#intro div {
   margin-top: 20vh;
 }
 
@@ -116,11 +131,11 @@ section > img {
   background-color: #55b4b6;
 }
 
-#flow > img {
+#flow img {
   height: 80%;
 }
 
-#flow > div {
+#flow div {
   /* margin-top: 25vh; */
 }
 
