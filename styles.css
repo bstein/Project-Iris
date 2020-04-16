@@ -102,11 +102,13 @@ section img {
 }
 
 #intro img {
-  margin-top: 40vh;
+  width: 40vw;
+  height: auto;
+  margin-top: 20vh;
 }
 
 #intro div {
-  margin-top: 20vh;
+  margin-top: -20vh;
 }
 
 .cardText {
@@ -117,7 +119,7 @@ section img {
 }
 
 .cardTextSecondary {
-  margin-left: 4vh;
+  margin-left: 6vh;
   font-size: 6vh;
   font-weight: normal;
 }
