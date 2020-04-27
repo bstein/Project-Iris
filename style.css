@@ -116,8 +116,29 @@ section p:first-of-type {
   background-color: #b66d55;
 }
 
+#theActionBar {
+  background-color: #b69e55;
+}
 
+#embraceRoundness {
+  background-color: #b65584;
+}
 
+#carefulColors {
+  background-color: #84b655;
+}
+
+#prettyText {
+  background-color: #55b3b6;
+}
+
+#keepTheNuance {
+  background-color: #b455b6;
+}
+
+#breakTheRules {
+  background-color: #b65555;
+}
 
 #more {
   background-color: black;
