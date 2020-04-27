@@ -154,6 +154,10 @@ section p:first-of-type {
   background-color: #b455b6;
 }
 
+#nuance > img {
+  margin-top: 0;
+}
+
 #breakTheRules {
   background-color: #b65555;
 }
