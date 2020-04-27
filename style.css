@@ -138,6 +138,10 @@ section p:first-of-type {
   background-color: #b65584;
 }
 
+#roundness > img {
+  margin-top: 180vh;
+}
+
 #carefulColors {
   background-color: #84b655;
 }
