@@ -120,8 +120,18 @@ section p:first-of-type {
   background-color: #b66d55;
 }
 
+#reachability > img {
+  margin-top: -110vh;
+}
+
 #theActionBar {
   background-color: #b69e55;
+}
+
+#theActionBar > img {
+  width: 45%;
+  height: auto;
+  margin-top: 0;
 }
 
 #roundness {
