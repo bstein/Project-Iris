@@ -146,6 +146,10 @@ section p:first-of-type {
   background-color: #84b655;
 }
 
+#carefulColors > img {
+  margin-top: 0;
+}
+
 #prettyText {
   background-color: #55b3b6;
 }
