@@ -112,6 +112,10 @@ section p:first-of-type {
   background-color: #b68555;
 }
 
+#theGrid > img {
+  margin-top: -30vh;
+}
+
 #reachability {
   background-color: #b66d55;
 }
