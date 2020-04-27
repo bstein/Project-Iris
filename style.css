@@ -50,26 +50,13 @@ section {
 }
 
 section > img {
-  height: 100%;
+  height: 80%;
+  margin-top: -85px;
 }
 
 section a {
   outline: none;
   color: #ffffff;
-}
-
-#intro {
-  background-color: #5655b6;
-}
-
-#intro img {
-  width: 40vw;
-  height: auto;
-  margin-top: 20vh;
-}
-
-#intro div {
-  margin-top: -10vh;
 }
 
 section h1 {
@@ -96,18 +83,42 @@ section p {
 
 section p:first-of-type {
   margin-top: 6vh;
+  font-weight: bold;
 }
 
+#intro {
+  background-color: #5655b6;
+}
+
+#intro > img {
+  width: 40vw;
+  height: auto;
+  margin-top: 30vh;
+}
+
+#intro > div {
+  margin-top: -10vh;
+}
 
 #flow {
   background-color: #55b4b6;
 }
 
-#flow img {
-  height: 80%;
-  margin-top: -85px;
+#blurryTransitions {
+  background-color: #8755b6;
 }
 
+#theGrid {
+  background-color: #b68555;
+}
+
+#reachability {
+  background-color: #b66d55;
+}
+
+
+
+
 #more {
-  background-color: #8755b6;
+  background-color: black;
 }
