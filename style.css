@@ -120,7 +120,7 @@ section p:first-of-type {
   background-color: #b69e55;
 }
 
-#embraceRoundness {
+#roundness {
   background-color: #b65584;
 }
 
@@ -132,7 +132,7 @@ section p:first-of-type {
   background-color: #55b3b6;
 }
 
-#keepTheNuance {
+#nuance {
   background-color: #b455b6;
 }
 
@@ -142,4 +142,8 @@ section p:first-of-type {
 
 #more {
   background-color: black;
+}
+
+#more a {
+  text-decoration: none;
 }
