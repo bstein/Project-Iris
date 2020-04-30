@@ -60,6 +60,7 @@ section > img {
 
 section a {
   outline: none;
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -90,7 +91,42 @@ section p:first-of-type {
   font-weight: bold;
 }
 
-#intro, #more {
+.about {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.about a {
+  text-decoration: underline;
+  color: #1339cc;
+}
+
+.about h1 {
+  margin-top: 9vh;
+  margin-bottom: 6vh;
+}
+
+.about p {
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  font-size: 3vh;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.about p:first-of-type {
+  margin-top: 2vh;
+  font-weight: normal;
+}
+
+.about p:last-of-type {
+  margin-bottom: 9vh;
+}
+
+#intro {
   background-color: #5655b6;
 }
 
@@ -171,4 +207,8 @@ section p:first-of-type {
 
 #breakTheRules > img {
   margin-top: 240vh;
+}
+
+#more, .aboutBody {
+  background-color: #000000;
 }
